@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es"></html>
+    <head>
+        <meta charset ="utf-8">
+        <title> Formulario de Contacto-WebMed</title>
+    </head>
+    <header>
+        <a href="../index.html" class="header">
+        <h1>WebMed</h1>
+        <img src="../img/LuJan.jpg" alt= "Logo de la Web" height="100">
+        </a>
+        <p>Enciclopedia médica para estudiantes de ingeniería de la salud y medicina.</p>
+        
+    </header>
+    <body>
+        <form action="pagC.html" method="post"></form>
+        <h1>Formulario de Contacto</h1>
+        <p><strong>(*)</strong> Campo obligatorio</p>
+
+        <p>
+        <label for="asunto"><strong> * Asunto:</strong></label>
+        <input type="text" id="asunto" name="asunto" placeholder="suscripción" required>
+        <br>
+        Es un campo de texto de una linea.
+        </p>
+
+        <p>
+        <label for="pregunta"><strong> * Pregunta:</strong></label>
+        <input type="text" id="pregunta" name="pregunta" placeholder="cuánto cuesta" required>
+        <br>
+        Es un campo de texto de varias lineas.
+        </p>
+
+        <p>
+        <label for="yoSoy"><strong>Yo soy:</strong></label>
+        <select id="yoSoy" name="yoSoy">
+            <option value="">Seleccione una opción</option>
+            <option value="paciente">Paciente</option>
+            <option value="cientifico">Científico</option>
+            <option value="medico">Médico</option>
+            <option value="educador">Educador</option>
+            <option value="fabricante">Fabricante</option>
+            <option value="periodista">Periodista</option>
+        </select>
+        Selecciona la posible opción que te identifique.
+        </p>
+
+
+        <p><label for="fecha-nacimiento"><strong>Fecha de nacimiento:</strong></label>
+        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+        Introduce la fecha de nacimiento.
+        </p>
+
+        
+        <label><strong>Sexo:</strong></label>
+        <p>Elige entre estas opciones</p>
+        <fieldset>
+        <input type="radio" id="hombre" name="sexo" value="hombre" required>
+        <label for="hombre">Hombre</label>
+        <br>
+        <input type="radio" id="mujer" name="sexo" value="mujer" required>
+        <label for="mujer">Mujer</label>
+        <br>
+        <input type="radio" id="otro" name="sexo" value="otro" required>
+        <label for="otro">Otro</label>
+        </fieldset>
+
+        <p>
+        <label for="email"><strong>Correo electrónico:</strong></label>
+        <input type="email" id="email" name="email" placeholder="LuJan@gmail.com">
+        Es un campo de texto que solo admite el correo electrónico.
+        </p>
+
+        <input type="checkbox" id="mas-info" name="mas-info">
+        <label for="mas-info">Deseo recibir más información</label>
+
+        <p>
+        <button type="submit">Enviar</button>
+        </p>
+        </form>
+
+        
+        <footer></footer>
+            <p>Autores: Jani Natasha Paredes Villalba,Lucía Giménes Pelegrín</p>
+            <p>&copy; 2024 - Todos los derechos reservados</p>
+            <p>Aviso legal | Política de privacidad</p>
+            <p>Fuente: WebMed</p>
+        </footer>
+    </body>
+</html>
